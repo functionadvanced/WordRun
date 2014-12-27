@@ -77,7 +77,7 @@
 		var now = -1;
 		var answer;
 		var best_score = 0;
-		var left_time, time_limit=10;
+		var left_time, time_limit=5;
 		function swap(_index)
 		{
 			var aim = Math.floor(Math.random() * 10000) % len;
@@ -100,7 +100,7 @@
 			--left_time;
 			if (now == 0)
 				++left_time;
-			setTimeout('draw_time()',500);
+			setTimeout('draw_time()',1000);
 		}
 		function next()
 		{
